@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IncubasysTest</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register_account">No account yet? Create one</string>
+    <string name="company_name">Company Name</string>
+    <string name="one">1.</string>
+    <string name="todo">TODO</string>
+    <string name="companies">Companies</string>
+    <string name="description">Description</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
