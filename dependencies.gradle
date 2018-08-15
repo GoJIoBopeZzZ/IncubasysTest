@@ -1,0 +1,217 @@
+ext {
+    compileSdkVersion = 27
+    minSdkVersion = 17
+    targetSdkVersion = 27
+    buildToolsVersion = '27.0.3'
+
+    gradlePluginVersion = '3.1.0'
+
+    multidexVersion = '1.0.1'
+
+    playServicesVersion = '12.0.0'
+
+    supportLibVersion = '27.0.2'
+    constraintLayoutVersion = '1.1.0'
+
+    kotlinVersion = '1.2.31'
+
+    rxJavaVersion = '2.1.9'
+    rxBindingVersion = '2.1.1'
+    rxAndroidVersion = '2.0.2'
+    rxRelayVersion = '2.0.0'
+
+    daggerVersion = '2.15'
+    javaxInjectVersion = '1'
+
+    retrofitVersion = '2.3.0'
+    okHttpVersion = '3.10.0'
+
+//    roomVersion = '1.0.0'
+
+    ciceroneVersion = '3.0.0'
+
+    frescoVersion = '1.8.1'
+
+    vkSdkVersion = '1.6.7'
+    fbSdkVersion = '4.28.0'
+
+    fabricVersion = '1.25.1'
+
+    crashlyticsVersion = '2.8.0'
+
+    maskedEditTextVersion = '1.0.5'
+    keyboardVisibilityVersion = '2.1.0'
+    flexBoxLayoutVersion = "0.3.2"
+    blurKitVersion = '1.1.0'
+    wheelPickerVersion = '1.1.2'
+
+    mosbyVersion = '3.1.0'
+
+    threeTenABPVersion = '1.0.5'
+
+    timberVersion = '4.6.1'
+
+    junitVersion = '4.12'
+    jsonAssertVersion = '1.5.0'
+    testRunnerVersion = '1.0.1'
+    espressoVersion = "3.0.1"
+
+    gsonVersion = '2.8.2'
+
+    exoPlayerVersion = '2.7.1'
+
+    pdfViewerVersion = '2.8.2'
+
+    debugDrawerVersion = '0.8.0'
+    scalpelVersion = '1.1.2'
+
+    leakCanaryVersion = '1.5.4'
+
+    /////////////////////////////////////////////////////////////////
+    // GRADLE
+    /////////////////////////////////////////////////////////////////
+    gradlePlugin = "com.android.tools.build:gradle:$gradlePluginVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // SUPPORT LIBRARIES
+    /////////////////////////////////////////////////////////////////
+    supportLib = [
+            design            : "com.android.support:design:$supportLibVersion",
+            support           : "com.android.support:support-v4:$supportLibVersion",
+            appCompat         : "com.android.support:appcompat-v7:$supportLibVersion",
+            cardView          : "com.android.support:cardview-v7:$supportLibVersion",
+            customTabs        : "com.android.support:customtabs:$supportLibVersion",
+            supportAnnotations: "com.android.support:support-annotations:$supportLibVersion",
+            constraintLayout  : "com.android.support.constraint:constraint-layout:$constraintLayoutVersion-beta5"
+    ]
+
+    /////////////////////////////////////////////////////////////////
+    // PLAY SERVICES
+    /////////////////////////////////////////////////////////////////
+    playServicesBase = "com.google.android.gms:play-services-base:$playServicesVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // KOTLIN
+    /////////////////////////////////////////////////////////////////
+    kotlinPlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    kotlinStdLibJdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // RX
+    /////////////////////////////////////////////////////////////////
+    rxJava = "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    rxAndroid = "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+    rxBinding = [
+            base: "com.jakewharton.rxbinding2:rxbinding-kotlin:$rxBindingVersion",
+            v4  : "com.jakewharton.rxbinding2:rxbinding-support-v4-kotlin:$rxBindingVersion"
+    ]
+    rxRelay = "com.jakewharton.rxrelay2:rxrelay:$rxRelayVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // DI
+    /////////////////////////////////////////////////////////////////
+    dagger = "com.google.dagger:dagger:$daggerVersion"
+    daggerCompiler = "com.google.dagger:dagger-compiler:$daggerVersion"
+    javaxInject = "javax.inject:javax.inject:$javaxInjectVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // NETWORK
+    /////////////////////////////////////////////////////////////////
+    retrofit = [
+            retrofit     : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            gsonConverter: "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            rxJavaAdapter: "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    ]
+    okHttp = "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    okHttpLogger = "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+
+//    /////////////////////////////////////////////////////////////////
+//    // DATABASE
+//    /////////////////////////////////////////////////////////////////
+//    room = "android.arch.persistence.room:runtime:$roomVersion"
+//    roomRxJavaBinding = "android.arch.persistence.room:rxjava2:$roomVersion"
+//    roomCompiler = "android.arch.persistence.room:compiler:$roomVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // NAVIGATION
+    /////////////////////////////////////////////////////////////////
+    cicerone = "ru.terrakok.cicerone:cicerone:$ciceroneVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // IMAGE LOADING
+    /////////////////////////////////////////////////////////////////
+    fresco = "com.facebook.fresco:fresco:$frescoVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // SOCIALS
+    /////////////////////////////////////////////////////////////////
+    vkSdk = "com.vk:androidsdk:$vkSdkVersion"
+    fbSdkCore = "com.facebook.android:facebook-core:$fbSdkVersion"
+    fbSdkLogin = "com.facebook.android:facebook-login:$fbSdkVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // CRASH-REPORTING
+    /////////////////////////////////////////////////////////////////
+    fabricPlugin = "io.fabric.tools:gradle:$fabricVersion"
+    crashlyticsLib = "com.crashlytics.sdk.android:crashlytics:${crashlyticsVersion}@aar"
+
+    /////////////////////////////////////////////////////////////////
+    // UI
+    /////////////////////////////////////////////////////////////////
+    maskedEditText = "ru.egslava:MaskedEditText:$maskedEditTextVersion"
+    blurKit = "com.flurgle:blurkit:$blurKitVersion"
+    keyboardListener = "net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:$keyboardVisibilityVersion"
+    flexBoxLayout = "com.google.android:flexbox:$flexBoxLayoutVersion"
+    wheelPicker = "cn.aigestudio.wheelpicker:WheelPicker:$wheelPickerVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // MVP
+    /////////////////////////////////////////////////////////////////
+    mosbyMvi = "com.hannesdorfmann.mosby3:mvi:$mosbyVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // DATE AND TIME
+    /////////////////////////////////////////////////////////////////
+    threeTenABP = "com.jakewharton.threetenabp:threetenabp:$threeTenABPVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // LOG
+    /////////////////////////////////////////////////////////////////
+    timber = "com.jakewharton.timber:timber:$timberVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // TESTING
+    /////////////////////////////////////////////////////////////////
+    jUnit = "junit:junit:$junitVersion"
+    jsonAssert = "org.skyscreamer:jsonassert:$jsonAssertVersion"
+    testRunner = "com.android.support.test:runner:$testRunnerVersion"
+    espresso = "com.android.support.test.espresso:espresso-core:$espressoVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // DEBUG STUFF
+    /////////////////////////////////////////////////////////////////
+    debugDrawer = "io.palaima.debugdrawer:debugdrawer:$debugDrawerVersion"
+    debugDrawerNoOp = "io.palaima.debugdrawer:debugdrawer-no-op:$debugDrawerVersion"
+    debugDrawerModules = [
+            commons       : "io.palaima.debugdrawer:debugdrawer-commons:$debugDrawerVersion",
+            timber        : "io.palaima.debugdrawer:debugdrawer-timber:$debugDrawerVersion",
+            networkQuality: "io.palaima.debugdrawer:debugdrawer-network-quality:$debugDrawerVersion",
+            scalpel       : "io.palaima.debugdrawer:debugdrawer-scalpel:$debugDrawerVersion"
+    ]
+    scalpel = "com.jakewharton.scalpel:scalpel:$scalpelVersion"
+    leakCanary = "com.squareup.leakcanary:leakcanary-android:$leakCanaryVersion"
+    leakCanaryNoOp = "com.squareup.leakcanary:leakcanary-android-no-op:$leakCanaryVersion"
+
+    /////////////////////////////////////////////////////////////////
+    // OTHER
+    /////////////////////////////////////////////////////////////////
+    gson = "com.google.code.gson:gson:$gsonVersion"
+    multidex = "com.android.support:multidex:$multidexVersion"
+    pdfViewer = "com.github.barteksc:android-pdf-viewer:$pdfViewerVersion"
+    exoPlayer = [
+            core           : "com.google.android.exoplayer:exoplayer-core:$exoPlayerVersion",
+            extOkHttp      : "com.google.android.exoplayer:extension-okhttp:$exoPlayerVersion",
+            extMediaSession: "com.google.android.exoplayer:extension-mediasession:$exoPlayerVersion"
+    ]
+}
