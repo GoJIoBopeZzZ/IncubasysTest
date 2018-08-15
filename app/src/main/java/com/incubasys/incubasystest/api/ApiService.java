@@ -4,6 +4,7 @@ import com.incubasys.incubasystest.model.AuthResponse;
 import com.incubasys.incubasystest.model.CompanyData;
 import com.incubasys.incubasystest.model.CompanyDetailsData;
 import com.incubasys.incubasystest.model.CompanyResponse;
+import com.incubasys.incubasystest.model.Pass;
 import com.incubasys.incubasystest.model.User;
 import retrofit.Call;
 import retrofit.http.Body;
@@ -19,6 +20,10 @@ public interface ApiService {
     @Headers("Content-Type: application/json")
     @POST("/login")
     Call<AuthResponse> authorization(@Body User user);
+
+    @Headers("Content-Type: application/json")
+    @POST("/validate")
+    Call<AuthResponse> test(@Body Pass pass);
 
     @GET("/test")
     Call<CompanyResponse> getCompanies(@Header("Authorization") String token,

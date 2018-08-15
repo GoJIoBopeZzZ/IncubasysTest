@@ -33,4 +33,5 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:26.1.0'
     implementation 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
     implementation 'co.roverlabs:picasso:2.5.2'
+    implementation 'za.co.riggaroo:materialhelptutorial:1.0.2'
 }
