@@ -32,6 +32,13 @@
         <activity
             android:name=".activity.CompanyDetailsActivity"
             android:theme="@style/CompanyDetails" />
+
+       <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="45626f711615a88cfb4916943cab2c3a0e9c100c" />
+         <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="45626f711615a88cfb4916943cab2c3a0e9c100c" />
     </application>
 
 </manifest>
